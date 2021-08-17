@@ -2,6 +2,7 @@ package com.example.carbusiness.di
 
 import android.app.Application
 import com.example.carbusiness.CarBusinessApplication
+import com.example.carbusiness.data.service.ServiceModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
@@ -13,7 +14,9 @@ import dagger.android.DaggerApplication
     modules = [
         AndroidInjectionModule::class,
         AppModule::class,
-        ActivityProvider::class
+        ActivityProvider::class,
+        FragmentProvider::class,
+        ServiceModule::class
     ]
 )
 interface AppComponent : AndroidInjector<DaggerApplication> {

@@ -3,6 +3,9 @@ package com.example.carbusiness.di
 import android.app.Application
 import android.content.Context
 import com.example.carbusiness.CarBusinessApplication
+import com.example.carbusiness.data.repository.CarsRepository
+import com.example.carbusiness.data.repository.CarsRepositoryImpl
+import com.example.carbusiness.data.service.CarsService
 import dagger.Module
 import dagger.Provides
 

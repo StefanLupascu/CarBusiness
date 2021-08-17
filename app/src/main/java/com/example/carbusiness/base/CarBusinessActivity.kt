@@ -11,8 +11,8 @@ abstract class CarBusinessActivity<BINDING: ViewDataBinding>(@LayoutRes private 
 
     protected lateinit var binding: BINDING
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
         DataBindingUtil.setContentView<BINDING>(this, layoutResource).also {
             it.lifecycleOwner = this
