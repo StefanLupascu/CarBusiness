@@ -4,8 +4,12 @@ import android.os.Bundle
 import android.view.View
 import com.example.carbusiness.CarsBinding
 import com.example.carbusiness.R
-import com.example.carbusiness.base.CarBusinessViewModelFragment
+import com.example.carbusiness.base.adapter.CarBusinessAdapter
+import com.example.carbusiness.base.fragment.CarBusinessViewModelFragment
 import com.example.carbusiness.ui.cars.adapter.CarsAdapter
+import com.example.carbusiness.ui.cars.items.CarFactory
+import com.example.carbusiness.ui.cars.items.CarFactory2
+import com.example.carbusiness.ui.cars.items.CarFactory3
 import com.example.carbusiness.ui.main.MainActivity
 import com.example.carbusiness.utils.observeNonNull
 import com.example.carbusiness.utils.showToast
@@ -15,10 +19,17 @@ class CarsFragment: CarBusinessViewModelFragment<CarsBinding, CarsViewModel, Car
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val adapter = CarsAdapter(
-            onCarClicked = { id ->
-                (activity as MainActivity).navigateToCarDetails(id)
-            }
+//        val adapter = CarsAdapter(
+//            onCarClicked = { id ->
+//                (activity as MainActivity).navigateToCarDetails(id)
+//            }
+//        )
+        val adapter = CarBusinessAdapter(
+            CarFactory(onItemClicked = { id ->
+                showToast(requireContext(), "Car $id")
+            }),
+            CarFactory2,
+            CarFactory3
         )
 
         binding.carsList.adapter = adapter

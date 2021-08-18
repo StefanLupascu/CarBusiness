@@ -1,11 +1,10 @@
 package com.example.carbusiness.ui.add
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import com.example.carbusiness.AddCarBinding
 import com.example.carbusiness.R
-import com.example.carbusiness.base.CarBusinessViewModelFragment
+import com.example.carbusiness.base.fragment.CarBusinessViewModelFragment
 
 class AddCarFragment:
     CarBusinessViewModelFragment<AddCarBinding, AddCarViewModel, AddCarViewModelFactory>(R.layout.fragment_add_car, AddCarViewModel::class) {

@@ -1,4 +1,4 @@
-package com.example.carbusiness.base
+package com.example.carbusiness.base.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
