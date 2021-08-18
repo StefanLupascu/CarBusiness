@@ -46,7 +46,7 @@ class LoginActivity : CarBusinessViewModelActivity<LoginBinding, LoginViewModel,
         val password = binding.passwordField.text.toString()
 
         if (username == "" || password == "") {
-            Log.e("STEFAN", "IT GOT HERE")
+            Log.e("STEFAN", "IT GOT HEREE")
             Toast.makeText(this, "All fields must be completed", Toast.LENGTH_LONG).show()
             showToast(this, "All fields must be completed")
             return
