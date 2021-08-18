@@ -8,7 +8,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import com.example.carbusiness.LoginBinding
 import com.example.carbusiness.R
-import com.example.carbusiness.base.CarBusinessViewModelActivity
+import com.example.carbusiness.base.activity.CarBusinessViewModelActivity
 import com.example.carbusiness.ui.main.MainActivity
 import com.example.carbusiness.utils.observeNonNull
 import com.example.carbusiness.utils.showToast

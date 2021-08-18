@@ -1,7 +1,6 @@
-package com.example.carbusiness.base
+package com.example.carbusiness.base.activity
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.annotation.LayoutRes
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding

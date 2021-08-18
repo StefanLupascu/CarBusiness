@@ -1,4 +1,4 @@
-package com.example.carbusiness.base
+package com.example.carbusiness.base.fragment
 
 import androidx.annotation.LayoutRes
 import androidx.databinding.ViewDataBinding

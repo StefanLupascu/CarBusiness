@@ -5,7 +5,7 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import com.example.carbusiness.MainBinding
 import com.example.carbusiness.R
-import com.example.carbusiness.base.CarBusinessViewModelActivity
+import com.example.carbusiness.base.activity.CarBusinessViewModelActivity
 import com.example.carbusiness.ui.add.AddCarFragment
 import com.example.carbusiness.ui.carDetails.CarDetailsFragment
 import com.example.carbusiness.ui.cars.CarsFragment

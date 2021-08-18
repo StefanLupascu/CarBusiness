@@ -5,7 +5,7 @@ import android.util.Log
 import android.view.View
 import com.example.carbusiness.CarDetailsBinding
 import com.example.carbusiness.R
-import com.example.carbusiness.base.CarBusinessViewModelFragment
+import com.example.carbusiness.base.fragment.CarBusinessViewModelFragment
 
 class CarDetailsFragment:
     CarBusinessViewModelFragment<CarDetailsBinding, CarDetailsViewModel, CarDetailsViewModelFactory>(

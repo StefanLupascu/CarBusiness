@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import com.example.carbusiness.LandingBinding
 import com.example.carbusiness.R
-import com.example.carbusiness.base.CarBusinessActivity
+import com.example.carbusiness.base.activity.CarBusinessActivity
 import com.example.carbusiness.ui.login.LoginActivity
 
 class LandingActivity : CarBusinessActivity<LandingBinding>(R.layout.activity_landing) {
