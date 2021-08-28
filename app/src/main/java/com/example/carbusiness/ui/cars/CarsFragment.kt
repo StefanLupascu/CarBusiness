@@ -28,8 +28,8 @@ class CarsFragment: CarBusinessViewModelFragment<CarsBinding, CarsViewModel, Car
             CarFactory(onItemClicked = { id ->
                 showToast(requireContext(), "Car $id")
             }),
-            CarFactory2,
-            CarFactory3
+            CarFactory2(),
+            CarFactory3()
         )
 
         binding.carsList.adapter = adapter
